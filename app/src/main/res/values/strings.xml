@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Movies_App</string>
+    <string name="page1txt1">Watch Videos in\nVirtual Reality</string>
+    <string name="page1txt2">Download and watch offline\n wherever you are</string>
+    <string name="page1btn">GET IN</string>
+
+    <string name="titleTxt">Title</string>
+    <string name="defaultt">0</string>
+    <string name="summeryText">Summery</string>
+    <string name="test">teeeeessssstttt</string>
+    <string name="actorTxt">Actors</string>
+    <string name="lgnTitle">Log In</string>
+    <string name="editU">Username</string>
+    <string name="editP">Password</string>
+    <string name="loginText1">Forget your Password?</string>
+    <string name="lgnBtn">Login</string>
+    <string name="loginText2">Dont have an account?</string>
+    <string name="loginText3">Register now</string>
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/movie"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="7dp"
+        android:backgroundTint="#2f2f39">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/picture"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:contentDescription="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/titleTxt"/>
+
+            <TextView
+                android:id="@+id/titleTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:lines="2"
+                android:text="title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/picture"
+                app:layout_constraintTop_toBottomOf="@+id/picture"
+                app:layout_constraintBottom_toTopOf="@id/scoreTxt"/>
+
+
+            <TextView
+                android:drawableStart="@drawable/star"
+                android:id="@+id/scoreTxt"
+                android:text="score"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/white"
+                android:drawablePadding="7dp"
+                app:layout_constraintStart_toStartOf="@id/titleTxt"
+                app:layout_constraintTop_toBottomOf="@id/titleTxt"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
