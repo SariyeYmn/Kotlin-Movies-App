@@ -28,7 +28,7 @@ class FilmAdapter(var mContext: Context, var filmList: List<Film>)
         holder.binding.apply {
             titleTxt.text = film.title
             scoreTxt.text = film.score
-            picture.setImageResource(mContext.resources.getIdentifier(film.img, "drawable", mContext.packageName))
+            picture.setImageResource(imgResId)
 
             // Tıklama olayını burada işleyin
             holder.itemView.setOnClickListener {
@@ -37,14 +37,15 @@ class FilmAdapter(var mContext: Context, var filmList: List<Film>)
                     putExtra("FILM_ID", film.id)
                     putExtra("FILM_TITLE", film.title)
                     putExtra("FILM_SCORE", film.score)
+                    putExtra("FILM_TIME", film.time)
+                    putExtra("FILM_CALENDAR", film.calendar)
                     putExtra("FILM_SUMMERY", film.summery)
                     putExtra("FILM_ACTORS", film.actors) // Puanı ekleyin
                     putExtra("FILM_IMG_RES_ID", imgResId) // Görsel kaynağının ID'sini ekleyin
+                    putParcelableArrayListExtra("FILM_ACTORSIMG", ArrayList(film.actorsImg)) // Listeyi ArrayList olarak ekleyin
                 }
                 context.startActivity(intent)
             }
-
-
         }
     }
 

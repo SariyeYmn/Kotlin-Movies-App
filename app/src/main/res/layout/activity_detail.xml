@@ -14,7 +14,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
 
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -31,7 +32,7 @@
                     android:contentDescription="@null"
                     android:scaleType="centerCrop" />
 
-                <com.google.android.material.imageview.ShapeableImageView
+                <ImageView
                     android:id="@+id/posterNormalImg"
                     android:layout_width="210dp"
                     android:layout_height="300dp"
@@ -105,6 +106,7 @@
                 android:layout_margin="10dp">
 
                 <ImageView
+                    android:id="@+id/back"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginStart="7dp"
@@ -119,6 +121,7 @@
                     app:layout_constraintWidth_percent="0.08" />
 
                 <ImageView
+                    android:id="@+id/favorite"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginTop="7dp"
@@ -143,9 +146,9 @@
                 android:padding="5dp"
                 android:textSize="16sp"
                 android:drawableStart="@drawable/info"
-                android:drawableTint="@color/white"
+                android:drawableTint="@color/orange"
                 android:drawablePadding="5dp"
-                android:textColor="@color/white"
+                android:textColor="@color/orange"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/constraintLayout" />
@@ -170,11 +173,10 @@
                 android:padding="5dp"
                 android:textSize="16sp"
                 android:drawableStart="@drawable/person"
-                android:drawableTint="@color/white"
+                android:drawableTint="@color/orange"
                 android:drawablePadding="5dp"
-
                 android:layout_marginTop="5dp"
-                android:textColor="@color/white"
+                android:textColor="@color/orange"
                 app:layout_constraintStart_toStartOf="@id/text"
                 app:layout_constraintEnd_toEndOf="@id/text"
                 app:layout_constraintTop_toBottomOf="@id/movieSummeryInfo"/>

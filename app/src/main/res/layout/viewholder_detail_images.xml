@@ -7,10 +7,14 @@
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/itemImages"
         android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_margin="7dp"
+        android:scaleType="centerCrop"
         app:shapeAppearanceOverlay="@style/roundedImageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/avatar"
+        app:strokeWidth="2dp"
+        android:padding="2dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
